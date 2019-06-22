@@ -1,5 +1,5 @@
 .footer{}
-@media (max-width: $toast-breakpoint-small) {
+@media (min-width: $tablet-width) {
 }
-@media (max-width: $toast-breakpoint-medium) {
+@media (min-width: $desctop-width) {
 }

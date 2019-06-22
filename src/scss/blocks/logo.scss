@@ -1,5 +1,14 @@
 .logo{
-  background-color: #203341;
-  width: 77px;
-  height: 23px;
+  background-color: #213442;
+  width: 250px;
+  height: inherit;
+  &__image{
+    padding: 15px 0 0 15px;
+    width: 77px;
+    height: 23px;
+  }
+}
+@media (min-width: $tablet-width) {
+}
+@media (min-width: $desctop-width) {
 }
