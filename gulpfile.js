@@ -72,6 +72,12 @@ function scripts() {
     .pipe(gulp.dest(paths.build + 'js/'))
 }
 
+function copyFonts() {
+  return gulp.src(paths.src + 'fonts/*.{woff,woff2}')
+    .pipe(plumber())
+    .pipe(gulp.dest(paths.build + 'fonts/'))
+}
+
 function scriptsVendors() {
   return gulp.src([
       'node_modules/jquery/dist/jquery.min.js',
@@ -128,11 +134,11 @@ exports.watch = watch;
 
 gulp.task('build', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, images)
+  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images)
 ));
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, images),
+  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images),
   gulp.parallel(watch, serve)
 ));
