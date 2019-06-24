@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="container container--header-container">
+    <div class="container container--header">
       <div class="header__upper">
         <div class="header__logo-toggle">
             <div class="logo">
@@ -32,9 +32,7 @@
           </ul>
         </nav>
       </div>
-    </div>
-    <div class="header__bottom">
-      <div class="container container--header-bottom">
+      <div class="header__bottom">
         <div class="page-title">
             <h1 class="page-title__title">
               Дизайн интерьеров
@@ -94,67 +92,67 @@
       </div>
     </section>
     <section class="portfolio">
-      <h2 class="section-title">
-        Портфолио
-      </h2>
       <div class="container">
-        <form action="https://localhost:3001/" class="form">
-          <ul class="form__input-item-list form__input-item-list--portfolio">
-            <li class="form__input-item form__input-item--portfolio">
-              <input type="checkbox" id = "#all-projects" class="form__input-checkbox form__input-checkbox--portfolio">
-              <label for="#all-projects" class="form__label form__label--portfolio">Все проекты</label>
+        <h2 class="section-title">
+          Портфолио
+        </h2>
+        <form action="https://localhost:3000/" class="portfolio-form">
+          <ul class="portfolio-form__input-item-list form__input-item-list--portfolio">
+            <li class="portfolio-form__input-item form__input-item--portfolio">
+              <input type="checkbox" id = "#all-projects" class="portfolio-form__input-checkbox form__input-checkbox--portfolio">
+              <label for="#all-projects" class="portfolio-form__label form__label--portfolio">Все проекты</label>
             </li>
-            <li class="form__input-item form__input-item--portfolio">
-              <input type="checkbox" id = "#rooms-design" class="form__input-checkbox form__input-checkbox--portfolio">
-              <label for="#rooms-design" class="form__label form__label--portfolio">Дизайн интерьеров</label>
+            <li class="portfolio-form__input-item form__input-item--portfolio">
+              <input type="checkbox" id = "#rooms-design" class="portfolio-form__input-checkbox form__input-checkbox--portfolio">
+              <label for="#rooms-design" class="portfolio-form__label form__label--portfolio">Дизайн интерьеров</label>
             </li>
-            <li class="form__input-item form__input-item--portfolio">
-              <input type="checkbox" id = "#furnish" class="form__input-checkbox form__input-checkbox--portfolio">
-              <label for="#furnish" class="form__label form__label--portfolio">Отделочные работы</label>
+            <li class="portfolio-form__input-item form__input-item--portfolio">
+              <input type="checkbox" id = "#furnish" class="portfolio-form__input-checkbox form__input-checkbox--portfolio">
+              <label for="#furnish" class="portfolio-form__label form__label--portfolio">Отделочные работы</label>
             </li>
           </ul>
         </form>
       </div>
       <div class="container container--portfolio-slider">
-        <div class="portfolio__slider">
-          <div class="portfolio__slider-list">
-            <div class="portfolio__slider-item portfolio__slider-item--design">
+        <div class="portfolio-slider">
+          <div class="portfolio-slider-list">
+            <div class="portfolio-slider__item portfolio-slider__item--design">
               <img src="../img/content/x.jpg" alt="image">
-              <h5 class="portfolio__slider-item-name">
+              <h5 class="portfolio-slider__item-name">
                 Дизайн интерьера гостиной
               </h5>
             </div>
-            <div class="portfolio__slider-item portfolio__slider-item--design">
+            <div class="portfolio-slider__item portfolio-slider__item--design">
               <img src="../img/content/x.jpg" alt="image">
-              <h5 class="portfolio__slider-item-name">
+              <h5 class="portfolio-slider__item-name">
                 Дизайн интерьера гостиной
               </h5>
             </div>
-            <div class="portfolio__slider-item portfolio__slider-item--design">
+            <div class="portfolio-slider__item portfolio-slider__item--design">
               <img src="../img/content/x.jpg" alt="image">
-              <h5 class="portfolio__slider-item-name">
+              <h5 class="portfolio-slider__item-name">
                 Дизайн столовой в стиле «Бохо»
               </h5>
             </div>
-            <div class="portfolio__slider-item portfolio__slider-item--design">
+            <div class="portfolio-slider__item portfolio-slider__item--design">
               <img src="../img/content/x.jpg" alt="image">
-              <h5 class="portfolio__slider-item-name">
+              <h5 class="portfolio-slider__item-name">
                 Лофт интерьер для отеля Hiloft
               </h5>
             </div>
           </div>
-          <div class="portfolio__slider-controls">
-            <span class="portdolio__slider-control portdolio__slider-control--prev"></span>
-            <span class="portdolio__slider-control portdolio__slider-control--next"></span>
+          <div class="portfolio-slider__controls">
+            <span class="portfolio-slider__control portfolio-slider__control--prev"></span>
+            <span class="portfolio-slider__control portfolio-slider__control--next"></span>
           </div>
         </div>
       </div>
     </section>
     <section class="service">
-      <h2 class="section-title">
-        Наши услуги
-      </h2>
       <div class="container">
+        <h2 class="section-title">
+          Наши услуги
+        </h2>
         <form action="https://localhost:3001/" class="service-form">
           <ul class="service-form__item-list service-form__item-list--service">
             <li class="service-form__item service-form__item--service">
@@ -195,78 +193,84 @@
               <label for="#desiners-visit" class="service-form__label service-form__label--service">Выезд дизайнера на дом</label>
             </li>
           </ul>
+          <a href="#" class="service-form__submit-link">
+            Консультация
+          </a>
+        </form>
       </div>
     </section>
     <section class="stages-of-work">
-      <h2 class="section-title">
-        Этапы работы
-      </h2>
-      <div class="stages-of-work__list">
-        <article class="stages-of-work__item">
-          <span class="stages-of-work__number">1</span>
-          <div class="stages-of-work__content">
-            <h5 class="stages-of-work__name"></h5>
-            <p class="stages-of-work__description"></p>
-          </div>
-        </article>
-        <article class="stages-of-work__item">
-          <span class="stages-of-work__number">1</span>
-          <div class="stages-of-work__content">
-            <h5 class="stages-of-work__name">Консультация</h5>
-            <p class="stages-of-work__description">
-              Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.
-            </p>
-          </div>
-        </article>
-        <article class="stages-of-work__item">
-          <span class="stages-of-work__number">2</span>
-          <div class="stages-of-work__content">
-            <h5 class="stages-of-work__name">Техническое задание</h5>
-            <p class="stages-of-work__description">
-              Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта.
-            </p>
-          </div>
-        </article>
-        <article class="stages-of-work__item">
-          <span class="stages-of-work__number">3</span>
-          <div class="stages-of-work__content">
-            <h5 class="stages-of-work__name">
-              Замеры и планировка
-            </h5>
-            <p class="stages-of-work__description">
-              Фиксируем размеры стен, окон, плинтусов, дверных проемов  для эффективной работы
-            </p>
-          </div>
-        </article>
-        <article class="stages-of-work__item">
-          <span class="stages-of-work__number">4</span>
-          <div class="stages-of-work__content">
-            <h5 class="stages-of-work__name">
-              Дизайн-концепция
-            </h5>
-            <p class="stages-of-work__description">
-              Создаем концепцию на основе пожеланий клиента, его образов  ощущений.  Подбираем мебель.
-            </p>
-          </div>
-        </article>
-        <article class="stages-of-work__item">
-          <span class="stages-of-work__number">5</span>
-          <div class="stages-of-work__content">
-            <h5 class="stages-of-work__name">3D Визуализация</h5>
-            <p class="stages-of-work__description">
-              Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным нормам.
-            </p>
-          </div>
-        </article>
-        <article class="stages-of-work__item">
-          <span class="stages-of-work__number">6</span>
-          <div class="stages-of-work__content">
-            <h5 class="stages-of-work__name">Комплектация интерьера</h5>
-            <p class="stages-of-work__description">
-              Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.
-            </p>
-          </div>
-        </article>
+      <div class="container">
+        <h2 class="section-title">
+          Этапы работы
+        </h2>
+        <div class="stages-of-work__list">
+          <article class="stages-of-work__item">
+            <span class="stages-of-work__item-number">1</span>
+            <div class="stages-of-work__item-content">
+              <h5 class="stages-of-work__item-name"></h5>
+              <p class="stages-of-work__item-description"></p>
+            </div>
+          </article>
+          <article class="stages-of-work__item">
+            <span class="stages-of-work__item-number">1</span>
+            <div class="stages-of-work__item-content">
+              <h5 class="stages-of-work__item-name">Консультация</h5>
+              <p class="stages-of-work__item-description">
+                Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.
+              </p>
+            </div>
+          </article>
+          <article class="stages-of-work__item">
+            <span class="stages-of-work__item-number">2</span>
+            <div class="stages-of-work__item-content">
+              <h5 class="stages-of-work__item-name">Техническое задание</h5>
+              <p class="stages-of-work__item-description">
+                Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта.
+              </p>
+            </div>
+          </article>
+          <article class="stages-of-work__item">
+            <span class="stages-of-work__item-number">3</span>
+            <div class="stages-of-work__item-content">
+              <h5 class="stages-of-work__item-name">
+                Замеры и планировка
+              </h5>
+              <p class="stages-of-work__item-description">
+                Фиксируем размеры стен, окон, плинтусов, дверных проемов  для эффективной работы
+              </p>
+            </div>
+          </article>
+          <article class="stages-of-work__item">
+            <span class="stages-of-work__item-number">4</span>
+            <div class="stages-of-work__item-content">
+              <h5 class="stages-of-work__item-name">
+                Дизайн-концепция
+              </h5>
+              <p class="stages-of-work__item-description">
+                Создаем концепцию на основе пожеланий клиента, его образов  ощущений.  Подбираем мебель.
+              </p>
+            </div>
+          </article>
+          <article class="stages-of-work__item">
+            <span class="stages-of-work__item-number">5</span>
+            <div class="stages-of-work__item-content">
+              <h5 class="stages-of-work__item-name">3D Визуализация</h5>
+              <p class="stages-of-work__item-description">
+                Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным нормам.
+              </p>
+            </div>
+          </article>
+          <article class="stages-of-work__item">
+            <span class="stages-of-work__item-number">6</span>
+            <div class="stages-of-work__item-content">
+              <h5 class="stages-of-work__item-name">Комплектация интерьера</h5>
+              <p class="stages-of-work__item-description">
+                Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
     <section class="contacts">

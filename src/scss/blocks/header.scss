@@ -1,7 +1,9 @@
 .header{
-
 }
 .header__upper{
+  padding-bottom: 60px;
+  background-color: #112537;
+  opacity: 0.88;
 }
 .header__logo-toggle{
   display: flex;
@@ -11,7 +13,6 @@
   position: relative;
   padding: 15px 0 0 15px;
   width: 70px;
-  background-color: #2b3d4d;
   &-button{
     position: absolute;
     width: 32px;
@@ -30,14 +31,18 @@
 .header__bottom{
   display: flex;
   flex-direction: column;
+  background-color: #112537;
+  opacity: 0.88;
   &-menu-link{
     display: block;
     margin: 0 auto;
+    margin-bottom: 130px;
     width: 223px;
     height: 54px;
     padding: 10px 20px;
     box-shadow: 5px 8px 21px 8px rgba(0, 1, 6, 0.06);
     background-color: #f8a25a;
+    opacity: 1;
     color: #ffffff;
     font-family: $link-ff;
     font-size: 14px;

@@ -1,0 +1,10 @@
+.portfolio-slider{
+  &__item-name{
+    color: $section-title-color;
+    font-family: $article-title-ff;
+    font-size: 18px;
+    font-weight: 400;
+    // Text style for "Дизайн инт"
+    letter-spacing: 0.64px;
+  }
+}

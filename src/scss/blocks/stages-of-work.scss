@@ -1,0 +1,30 @@
+.stages-of-work{
+  &__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  &__item-number{
+    display: none;
+  }
+  &__item-name{
+    margin-bottom: 25px;
+    color: #313131;
+    font-family: $article-title-ff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 17.74px;
+  }
+  &__item-description{
+    color: #5e5e5e;
+    font-family: $content-ff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+}
