@@ -1,4 +1,7 @@
 .portfolio-form{
+  &__input-item{
+    padding: 15px 0;
+  }
   &__input-checkbox{
     display: hidden;
   }

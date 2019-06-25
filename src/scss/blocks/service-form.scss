@@ -1,4 +1,10 @@
 .service-form{
+  &__item{
+    padding: 15px 0;
+  }
+  &__item-list{
+    padding-bottom: 40px;
+  }
   &__item-description{
     color: #5e5e5e;
     font-family: $content-ff;
@@ -12,11 +18,12 @@
     font-size: 22px;
     font-weight: 300;
   }
-  &__submit-link{
+  &__item-link{
     display: block;
     width: 217px;
     height: 56px;
     padding: 10px 20px;
+    margin: 0 auto;
     box-sizing: border-box;
     border: 2px solid #112537;
     color: $section-title-color;
