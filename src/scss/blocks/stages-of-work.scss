@@ -13,12 +13,23 @@
     display: none;
   }
   &__item-name{
-    margin-bottom: 25px;
+    position: relative;
+    margin-bottom: 40px;
     color: #313131;
     font-family: $article-title-ff;
     font-size: 24px;
     font-weight: 400;
     line-height: 17.74px;
+    &:after{
+      position: absolute;
+      display: block;
+      bottom: -14px;
+      left: 6px;
+      content: '';
+      width: 41px;
+      height: 1px;
+      background-color: #182c3d;
+    }
   }
   &__item-description{
     color: #5e5e5e;

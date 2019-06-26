@@ -1,22 +1,27 @@
-.service-form{
-  &__item{
-    padding: 15px 0;
+.service-slider{
+  padding-bottom: 60px;
+  &__items-names{
+    @extend %fl-col;
   }
-  &__item-list{
-    padding-bottom: 40px;
+  &__slide{
+    display: none;
   }
-  &__item-description{
+  &__item-name{
+    @extend %service-slider-padding;
+    padding: 7px 0;
+    color: #7d7d7d;
+    font-family: $content-ff;
+    font-size: 22px;
+    font-weight: 300;
+  }
+  &__slide-description{
+    margin: 15px 0;
+    @extend %service-slider-padding;
     color: #5e5e5e;
     font-family: $content-ff;
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
-  }
-  &__label{
-    color: #7d7d7d;
-    font-family: $content-ff;
-    font-size: 22px;
-    font-weight: 300;
   }
   &__item-link{
     display: block;
@@ -30,8 +35,9 @@
     font-family: $link-ff;
     font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 28px;
     text-align: center;
+    text-transform: uppercase;
     // Text style for "КОНСУЛЬТАЦ"
     letter-spacing: 2.25px;
   }
@@ -41,4 +47,11 @@ input.service-form__checkbox:checked + label.service-form__label{
   font-family: $article-title-ff;
   font-size: 22px;
   font-weight: 400;
+}
+.service-slider__slide--active{
+  display: block;
+}
+li.service-slider__item-name{
+  @extend %service-slider-padding;
+  padding: 10px 0;
 }
