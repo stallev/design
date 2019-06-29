@@ -2,6 +2,7 @@
   background-color: #fdfaf3;
 }
 .advantages__list{
+  @extend %side-padding;
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;

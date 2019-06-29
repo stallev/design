@@ -1,13 +1,15 @@
 .service-slider{
+  padding-top: 45px;
   padding-bottom: 60px;
   &__items-names{
     @extend %fl-col;
+    @extend %side-padding;
+    padding-bottom: 25px;
   }
   &__slide{
     display: none;
   }
   &__item-name{
-    @extend %service-slider-padding;
     padding: 7px 0;
     color: #7d7d7d;
     font-family: $content-ff;
@@ -16,7 +18,7 @@
   }
   &__slide-description{
     margin: 15px 0;
-    @extend %service-slider-padding;
+    @extend %side-padding;
     color: #5e5e5e;
     font-family: $content-ff;
     font-size: 20px;

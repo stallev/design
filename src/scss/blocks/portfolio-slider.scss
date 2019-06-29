@@ -1,6 +1,34 @@
 .portfolio-slider{
   padding-bottom: 40px;
+  &__filters-list{
+    @extend %side-padding;
+  }
+  &__filter{
+    margin-bottom: 25px;
+    color: #bababa;
+    font-family: $content-ff;
+    font-size: 22px;
+    font-weight: 400;
+    &--active{
+      color: $section-title-color;
+      font-family: $article-title-ff;
+      font-size: 22px;
+      font-weight: 400;
+    }
+  }
+  &__slide{
+    display: none;
+    width: 260px;
+    margin: 0 auto;
+    &--active{
+      display: block;
+    }
+  }
+  &__slide-image{
+    display: block;
+  }
   &__item-name{
+    padding-top: 10px;
     text-align: center;
     color: $section-title-color;
     font-family: $article-title-ff;

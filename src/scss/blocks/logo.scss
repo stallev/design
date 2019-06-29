@@ -6,6 +6,15 @@
     width: 77px;
     height: 23px;
   }
+  &--footer{
+    width: 70px;
+    height: 40px;
+  }
+  &__image--footer{
+    padding: 0;
+    width: 70px;
+    height: 40px;
+  }
 }
 @media (min-width: $tablet-width) {
 }

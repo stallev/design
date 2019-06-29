@@ -1,4 +1,44 @@
-.footer{}
+.footer{
+  &__content{
+    @extend %fl-col;
+    align-items: center;
+  }
+  &__social{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0 40px;
+    align-items: center;
+    width: 100%;
+  }
+  &__social-link{
+    display: block;
+    &--vk{
+      width: 30px;
+      height: 19px;
+      background-image: url("../img/decor/vk-icon.png");
+    }
+    &--instagram{
+      width: 27px;
+      height: 26px;
+      background-image: url("../img/decor/instagram-icon.png");
+    }
+    &--facebook{
+      width: 13px;
+      height: 26px;
+      background-image: url("../img/decor/facebook-icon.png");
+    }
+  }
+  &__author-design,
+  &__copyright{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffc487;
+    font-family: $content-ff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+}
 @media (min-width: $tablet-width) {
 }
 @media (min-width: $desctop-width) {

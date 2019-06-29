@@ -1,0 +1,41 @@
+.review{
+  display: none;
+  &--active{
+    display: block;
+  }
+  &__content{
+    @extend %fl-col;
+  }
+  &__user-photo{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  &__author{
+    margin-bottom: 10px;
+    color: #313131;
+    font-family: $article-title-ff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__service-name{
+    margin-bottom: 25px;
+    color: #efb172;
+    font-family: $content-ff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    // Text style for "Услуга: ин"
+    letter-spacing: 1.4px;
+  }
+  &__text{
+    text-align: center;
+    font-family: $content-ff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+}

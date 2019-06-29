@@ -93,48 +93,43 @@
     </section>
     <section class="portfolio">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title section-title--portfolio">
           Портфолио
         </h2>
-        <form action="https://localhost:3000/" class="portfolio-form">
-          <ul class="portfolio-form__input-item-list form__input-item-list--portfolio">
-            <li class="portfolio-form__input-item form__input-item--portfolio">
-              <input type="checkbox" id = "#all-projects" class="portfolio-form__input-checkbox form__input-checkbox--portfolio">
-              <label for="#all-projects" class="portfolio-form__label form__label--portfolio">Все проекты</label>
-            </li>
-            <li class="portfolio-form__input-item form__input-item--portfolio">
-              <input type="checkbox" id = "#rooms-design" class="portfolio-form__input-checkbox form__input-checkbox--portfolio">
-              <label for="#rooms-design" class="portfolio-form__label form__label--portfolio">Дизайн интерьеров</label>
-            </li>
-            <li class="portfolio-form__input-item form__input-item--portfolio">
-              <input type="checkbox" id = "#furnish" class="portfolio-form__input-checkbox form__input-checkbox--portfolio">
-              <label for="#furnish" class="portfolio-form__label form__label--portfolio">Отделочные работы</label>
-            </li>
-          </ul>
-        </form>
       </div>
       <div class="container container--portfolio-slider">
         <div class="portfolio-slider">
-          <div class="portfolio-slider-list">
-            <div class="portfolio-slider__item portfolio-slider__item--design">
-              <img src="../img/content/Cam3_large.png" alt="image">
+          <ul class="portfolio-slider__filters-list">
+            <li class="portfolio-slider__filter portfolio-slider__filter--active">
+              Все проекты
+            </li>
+            <li class="portfolio-slider__filter">
+              Дизайн интерьеров
+            </li>
+            <li class="portfolio-slider__filter">
+              Отделочные работы
+            </li>
+          </ul>
+          <ul class="portfolio-slider__slides-list">
+            <li class="portfolio-slider__slide portfolio-slider__slide--design portfolio-slider__slide--active">
+              <img src="../img/content/Cam3_large.png" alt="image" class="portfolio-slider__slide-image">
               <h5 class="portfolio-slider__item-name">
                 Дизайн интерьера гостиной
               </h5>
-            </div>
-            <div class="portfolio-slider__item portfolio-slider__item--design">
-              <img src="../img/content/x.jpg" alt="image">
+            </li>
+            <li class="portfolio-slider__slide portfolio-slider__slide--design">
+              <img src="../img/content/x.jpg" alt="image" class="portfolio-slider__slide-image">
               <h5 class="portfolio-slider__item-name">
                 Дизайн столовой в стиле «Бохо»
               </h5>
-            </div>
-            <div class="portfolio-slider__item portfolio-slider__item--design">
-              <img src="../img/content/x.jpg" alt="image">
+            </li>
+            <li class="portfolio-slider__slide portfolio-slider__slide--design">
+              <img src="../img/content/x.jpg" alt="image" class="portfolio-slider__slide-image">
               <h5 class="portfolio-slider__item-name">
                 Лофт интерьер для отеля Hiloft
               </h5>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="portfolio-slider__controls">
             <span class="portfolio-slider__control portfolio-slider__control--prev"></span>
             <span class="portfolio-slider__control portfolio-slider__control--next"></span>
@@ -265,13 +260,6 @@
           <article class="stages-of-work__item">
             <span class="stages-of-work__item-number">1</span>
             <div class="stages-of-work__item-content">
-              <h5 class="stages-of-work__item-name"></h5>
-              <p class="stages-of-work__item-description"></p>
-            </div>
-          </article>
-          <article class="stages-of-work__item">
-            <span class="stages-of-work__item-number">1</span>
-            <div class="stages-of-work__item-content">
               <h5 class="stages-of-work__item-name">Консультация</h5>
               <p class="stages-of-work__item-description">
                 Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.
@@ -331,7 +319,7 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="container">
+      <div class="container container--contacts">
         <form action="http://localhost:3001/" class="contact-form">
           <div class="contact-form__wrapper">
             <h3 class="contact-form__title">Мечтаете об интерьере от Brume?</h3>
@@ -339,58 +327,86 @@
               Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.
             </p>
             <fieldset class="contact-form__input-list">
-              <input type="text" class="contact-form__input">
-              <input type="tel" class="contact-form__input">
-              <input type="email" class="contact-form__input">
-              <input type="submit" value="отправить" class="contact-form__input contact-form__input--ubmit">
+              <input type="text" class="contact-form__input" placeholder="Имя*" required>
+              <input type="tel" class="contact-form__input" placeholder="Телефон*" required>
+              <input type="email" class="contact-form__input" placeholder="E-mail*" required>
+              <input type="submit" value="отправить" class="contact-form__input contact-form__input--submit">
             </fieldset>
             <p class="contact-form__info">
               Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных
             </p>
           </div>
-          <img src="../img/content/" alt="image" class="contact-form__image">
         </form>
       </div>
     </section>
     <section class="reviews">
-      <div class="container">
-        <h2 class="section_title">
+      <div class="container container--reviews">
+        <h2 class="section-title">
           Отзывы наших клиентов
         </h2>
       </div>
       <div class="container container--reviews">
         <div class="reviews__slider">
           <div class="reviews__slides-list">
-            <article class="review__slide">
-              <div class="review__slide-content">
-                <h5 class="review__slide-author"></h5>
-                <p class="review__slide-servise-name"></p>
-                <p class="review__slide-text"></p>
-              </div>
-              <img src="../img/content/" alt="image" class="review__image">
-            </article>
-            <article class="review__slide">
-              <div class="review__slide-content">
-                <h5 class="review__slide-author">
+            <article class="review review--active">
+              <div class="review__content">
+                <img src="../img/content/client-rev1.png" alt="image" class="review__user-photo">
+                <h5 class="review__author">
                   Александра Холодная
                 </h5>
-                <p class="review__slide-servise-name">
+                <p class="review__service-name">
                   Услуга: интерьер детской
                 </p>
-                <p class="review__slide-text">
+                <p class="review__text">
                   Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
                   В следующий раз обратимся к BRUME!
                 </p>
               </div>
-              <img src="../img/content/" alt="image" class="review__image">
             </article>
-            <article class="review__slide">
-              <div class="review__slide-content">
-                <h5 class="review__slide-author"></h5>
-                <p class="review__slide-servise-name"></p>
-                <p class="review__slide-text"></p>
+            <article class="review">
+              <div class="review__content">
+                <img src="../img/content/client-rev2.png" alt="image" class="review__user-photo">
+                <h5 class="review__author">
+                  Александра Холодная
+                </h5>
+                <p class="review__service-name">
+                  Услуга: интерьер детской
+                </p>
+                <p class="review__text">
+                  Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                  В следующий раз обратимся к BRUME!
+                </p>
               </div>
-              <img src="../img/content/" alt="image" class="review__image">
+            </article>
+            <article class="review">
+              <div class="review__content">
+                <img src="../img/content/client-rev3.png" alt="image" class="review__user-photo">
+                <h5 class="review__author">
+                  Александра Холодная
+                </h5>
+                <p class="review__service-name">
+                  Услуга: интерьер детской
+                </p>
+                <p class="review__text">
+                  Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                  В следующий раз обратимся к BRUME!
+                </p>
+              </div>
+            </article>
+            <article class="review">
+              <div class="review__content">
+                <img src="../img/content/client-rev2.png" alt="image" class="review__user-photo">
+                <h5 class="review__author">
+                  Александра Холодная
+                </h5>
+                <p class="review__service-name">
+                  Услуга: интерьер детской
+                </p>
+                <p class="review__text">
+                  Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                  В следующий раз обратимся к BRUME!
+                </p>
+              </div>
             </article>
           </div>
           <div class="reviews__slider-indikators">
@@ -405,15 +421,17 @@
   </main>
   <footer class="footer">
     <div class="container container--footer">
-      <p class="footer__copyright">BRUME interior, 2017 &nbsp; &copy;</p>
       <div class="footer__content">
-        <div class="footer__logo"></div>
+        <div class="logo logo--footer">
+          <img src="../img/decor/logo-footer.png" alt="logo" class="logo__image logo__image--footer">
+        </div>
         <div class="footer__social">
-          <a href="#" class="footer__social footer__social--vk"></a>
-          <a href="#" class="footer__social footer__social--instagram"></a>
-          <a href="#" class="footer__social footer__social--facebook"></a>
+          <a href="#" class="footer__social-link footer__social-link--vk"></a>
+          <a href="#" class="footer__social-link footer__social-link--instagram"></a>
+          <a href="#" class="footer__social-link footer__social-link--facebook"></a>
         </div>
       </div>
+      <p class="footer__copyright">BRUME interior, 2017 &nbsp; &copy;</p>
       <p class="footer__author-design">HolodnayaDesign</p>
     </div>
   </footer>

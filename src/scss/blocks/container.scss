@@ -7,6 +7,21 @@
     background-position: -531px 20px;
     background-repeat: no-repeat;
   }
+  &--portfolio-slider{
+    padding-top: 40px;
+  }
+  &--contacts{
+    background-image: url("../img/content/kitchen-brume.png");
+    background-position: -531px 20px;
+    background-repeat: no-repeat;
+  }
+  &--reviews{
+    padding: 50px 0;
+  }
+  &--footer{
+    padding: 50px 30px 40px;
+    background-color: #182c3d;
+  }
 }
 @media (min-width: $tablet-width) {
 }
