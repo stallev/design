@@ -15,6 +15,16 @@
     background-position: -531px 20px;
     background-repeat: no-repeat;
   }
+  &--video{
+    height: 620px;
+    background-image: url("../img/content/video.jpg");
+    background-repeat: no-repeat;
+    background-size: 509%;
+    background-position-x: -426px;
+  }
+  &--stages-of-work{
+    padding-top: 50px;
+  }
   &--reviews{
     padding: 50px 0;
   }
