@@ -3,27 +3,30 @@
   justify-content: center;
   align-items: center;
   height: inherit;
+  padding-top: 24px;
   overflow-x: hidden;
   background-color: #182c3d;
   opacity: 0.7;
   &__track{
     display: none;
   }
-  &__start-button{
-    position: relative;
-    display: block;
+  &__action{
     width: 84px;
     height: 84px;
     border-radius: 50%;
     border: 42px solid #febc80;
     box-shadow: 5px 8px 21px 8px rgba(0, 1, 6, 0.07);
     opacity: 0.95;
+  }
+  &__start-button{
+    position: relative;
+    display: block;
     &:before{
       position: absolute;
       content: "";
       width: 19px;
       height: 22px;
-      left: 0px;
+      left: -6px;
       top: -9px;
       background-image: url("../img/decor/start__button.png");
       background-repeat: no-repeat;
@@ -32,6 +35,7 @@
     }
   }
   &__description{
+    padding-top: 25px;
     text-align: center;
     color: #ffffff;
     font-family: $content-ff;

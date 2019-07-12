@@ -6,10 +6,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  padding-top: 40px;
 }
 .advantages__item{
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
   &-number{
     opacity: 0.26;
     color: #fea052;
@@ -19,11 +21,16 @@
     // Text style for "0, 1"
     letter-spacing: 0.28px;
   }
+  &-number-for-tablet{
+    display: none;
+  }
   &-title{
+    margin-bottom: 15px;
+    letter-spacing: .5px;
     color: #1a292f;
     font-family: $article-title-ff;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
   }
   &-description{
     color: $content-color;
@@ -32,6 +39,6 @@
     font-weight: 300;
     line-height: 25px;
     // Text style for "Заботы по"
-    letter-spacing: 0.64px;
+    letter-spacing: 0.9px;
   }
 }

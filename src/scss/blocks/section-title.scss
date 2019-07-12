@@ -6,4 +6,18 @@
   font-weight: 700;
   // Text style for "П, ортфоли"
   letter-spacing: 0.32px;
+  &--portfolio{
+    padding-top: 25px;
+    letter-spacing: 4px;
+  }
+  &--service{
+    letter-spacing: 3px;
+  }
+  &--stages-of-work{
+    letter-spacing: 5px;
+  }
+  &--reviews{
+    font-size: 46px;
+    line-height: 57px;
+  }
 }

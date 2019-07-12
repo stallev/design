@@ -1,6 +1,6 @@
 .contact-form{
   &__wrapper{
-    padding: 100px 10px 110px;
+    padding: 78px 10px 93px;
     background-color: #112537;
     opacity: 0.88;
   }
@@ -8,6 +8,7 @@
     padding: 0 10px 20px;
     text-align: center;
     color: #ffffff;
+    line-height: 52px;
     font-family: $section-title-ff;
     font-size: 45px;
     font-weight: 700;
@@ -15,7 +16,7 @@
     letter-spacing: 0.32px;
   }
   &__description{
-    padding: 20px 10px 50px;
+    padding: 0 10px 40px;
     text-align: center;
     color: #ffffff;
     font-family: $content-ff;
@@ -31,8 +32,9 @@
   &__input{
     display: block;
     box-sizing: border-box;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
+    padding-bottom: 12px;
+    width: 100%;
+    margin-bottom: 54px;
     border-radius: 1px;
     border: 0px solid;
     border-bottom: 2px solid #fde5d1;
@@ -52,7 +54,7 @@
     margin-bottom: 15px;
     margin-top: 50px;
     box-sizing: border-box;
-    padding: 20px 30px;
+    padding: 29px 30px;
     box-shadow: 0 0 49px 19px rgba(0, 0, 1, 0.02);
     border-radius: 5px;
     background-color: #f8a25a;
@@ -61,7 +63,7 @@
     text-transform: uppercase;
     font-family: $link-ff;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 16.52px;
     // Text style for "О, ТПРАВИТ"
     letter-spacing: 2.62px;

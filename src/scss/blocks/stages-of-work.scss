@@ -2,13 +2,13 @@
   &__list{
     display: flex;
     flex-direction: column;
-    margin-top: 45px;
+    margin-top: 53px;
     @extend %side-padding;
   }
   &__item{
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
   }
   &__item-number{
     display: none;
@@ -18,13 +18,13 @@
     margin-bottom: 40px;
     color: #313131;
     font-family: $article-title-ff;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 23px;
+    font-weight: 600;
     line-height: 17.74px;
     &:after{
       position: absolute;
       display: block;
-      bottom: -14px;
+      bottom: -19px;
       left: 6px;
       content: '';
       width: 41px;

@@ -1,10 +1,10 @@
 .service-slider{
-  padding-top: 45px;
-  padding-bottom: 60px;
+  padding-top: 27px;
+  padding-bottom: 30px;
   &__items-names{
     @extend %fl-col;
     @extend %side-padding;
-    padding-bottom: 25px;
+    padding-bottom: 46px;
   }
   &__slide{
     display: none;
@@ -15,15 +15,29 @@
     font-family: $content-ff;
     font-size: 22px;
     font-weight: 300;
+    &--active{
+      color: $section-title-color;
+      font-family: $article-title-ff;
+      font-size: 22px;
+      font-weight: 600;
+    }
   }
   &__slide-description{
-    margin: 15px 0;
+    margin: 25px 0 45px;
     @extend %side-padding;
     color: #5e5e5e;
     font-family: $content-ff;
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
+  }
+  &__image-wrapper{
+    height: 390px;
+    overflow: hidden;
+  }
+  &__slide-image{
+    height: 200%;
+    width: 200%;
   }
   &__item-link{
     display: block;
@@ -55,5 +69,5 @@ input.service-form__checkbox:checked + label.service-form__label{
 }
 li.service-slider__item-name{
   @extend %service-slider-padding;
-  padding: 10px 0;
+  padding: 16px 0;
 }
