@@ -8,3 +8,4 @@ article, div, section, ul, li{
 ul{
   padding: 0;
 }
+@include respond-to(tabletAndWider){}

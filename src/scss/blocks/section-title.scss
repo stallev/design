@@ -9,15 +9,40 @@
   &--portfolio{
     padding-top: 25px;
     letter-spacing: 4px;
+    @include respond-to(tabletAndWider){
+      padding-top: 71px;
+      padding-left: 40px;
+      text-align: left;
+    }
   }
   &--service{
     letter-spacing: 3px;
+    @include respond-to(tabletAndWider){
+      padding-left: 41px;
+      text-align: left;
+      letter-spacing: 1px;
+    }
   }
   &--stages-of-work{
     letter-spacing: 5px;
+    @include respond-to(tabletAndWider){
+      padding-left: 41px;
+      text-align: left;
+      letter-spacing: 1px;
+    }
   }
-  &--reviews{
-    font-size: 46px;
-    line-height: 57px;
+  
+}
+h2.section-title--reviews{
+  font-size: 46px;
+  line-height: 57px;
+  @include respond-to(tabletAndWider){
+    padding-left: 41px;
+    text-align: left;
+    letter-spacing: 1px;
   }
+}
+@media (min-width: $tablet-width) {
+}
+@media (min-width: $desctop-width) {
 }

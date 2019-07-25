@@ -65,10 +65,48 @@
       left: 100px;
       background-image: url("../img/decor/ArrowDown-icon.png");
       background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
 @media (min-width: $tablet-width) {
+  .header{
+    &__upper{
+      padding-top: 50px;
+      padding-bottom: 132px;
+    }
+    &__logo-toggle{
+      justify-content: space-between;
+    }
+    &__toggle{
+      width: 68px;
+      height: 45px;
+      margin-right: 50px;
+      margin-top: -2px;
+    }
+    &__toggle-button--hamburger{
+      width: 89px;
+      height: 58px;
+      background-size: 58px 37px;
+    }
+    &__bottom{
+      padding-bottom: 183px;
+    }
+    &__bottom-menu-link{
+      width: 439px;
+      height: 110px;
+      font-size: 30px;
+      line-height: 90px;
+      letter-spacing: 1.56px;
+      font-weight: 700;
+      &:after{
+        width: 20px;
+        height: 82px;
+        top: 213px;
+        left: 203px;
+      }
+    }
+  }
 }
 @media (min-width: $desctop-width) {
 }

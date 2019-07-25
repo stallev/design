@@ -12,8 +12,12 @@
     <div class="container container--header">
       <div class="header__upper">
         <div class="header__logo-toggle">
-            <div class="logo">
-              <img src="../img/decor/logo.png" alt="logo" class="logo__image">
+            <div class="logo logo--header">
+              <picture class="logo__image logo__image--header">
+                <source media="(min-width: 768px)" srcset="img/decor/logo-tablet.png">
+                <source media="(min-width: 1360px)" srcset="img/decor/logo-desktop.png">
+                <img src="img/decor/logo.png" alt="logo">
+              </picture>
             </div>
             <div class="header__toggle">
               <button class="header__toggle-button header__toggle-button--cross"></button>
@@ -116,21 +120,39 @@
           </ul>
           <ul class="portfolio-slider__slides-list">
             <li class="portfolio-slider__slide portfolio-slider__slide--design portfolio-slider__slide--active">
-              <img src="../img/content/Cam3_large.png" alt="image" class="portfolio-slider__slide-image">
+              <img src="../img/content/Cam3_large_tablet.png" alt="image" class="portfolio-slider__slide-image">
               <h5 class="portfolio-slider__item-name">
                 Дизайн интерьера гостиной
               </h5>
             </li>
             <li class="portfolio-slider__slide portfolio-slider__slide--design">
-              <img src="../img/content/x.jpg" alt="image" class="portfolio-slider__slide-image">
+              <img src="http://lorempixel.com/604/612/business/" alt="image" class="portfolio-slider__slide-image">
               <h5 class="portfolio-slider__item-name">
                 Дизайн столовой в стиле «Бохо»
               </h5>
             </li>
             <li class="portfolio-slider__slide portfolio-slider__slide--design">
-              <img src="../img/content/x.jpg" alt="image" class="portfolio-slider__slide-image">
+              <img src="http://lorempixel.com/604/612/business/" alt="image" class="portfolio-slider__slide-image">
               <h5 class="portfolio-slider__item-name">
                 Лофт интерьер для отеля Hiloft
+              </h5>
+            </li>
+            <li class="portfolio-slider__slide portfolio-slider__slide--furnish">
+              <img src="http://lorempixel.com/604/612/food/" alt="image" class="portfolio-slider__slide-image">
+              <h5 class="portfolio-slider__item-name">
+                Отделка для отеля Hiloft
+              </h5>
+            </li>
+            <li class="portfolio-slider__slide portfolio-slider__slide--furnish">
+              <img src="http://lorempixel.com/604/612/sports/" alt="image" class="portfolio-slider__slide-image">
+              <h5 class="portfolio-slider__item-name">
+                Отделка для отеля Hiloft
+              </h5>
+            </li>
+            <li class="portfolio-slider__slide portfolio-slider__slide--furnish">
+              <img src="http://lorempixel.com/604/612/sports/" alt="image" class="portfolio-slider__slide-image">
+              <h5 class="portfolio-slider__item-name">
+                Отделка для отеля Hiloft
               </h5>
             </li>
           </ul>
@@ -174,12 +196,15 @@
               </div>
               <div class="service-slider__slide-info">
                 <div class="service-slider__slide-description">
-                  Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  <h3 class="service-slider__slide-title">
+                    Дизайн коммерческих объектов
+                  </h3>
+                  <p class="service-slider__slide-text">
+                    Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  </p>
                 </div>
-                <div class="service-slider__item-contact">
-                  <span class="service-slider__item-projects-count"></span>
-                  <a href="#" class="service-slider__item-link">Консультация</a>
-                </div>
+                <span class="service-slider__item-projects-count">532 проекта</span>
+                <a href="#" class="service-slider__item-link">Консультация</a>
               </div>
             </li>
             <li class="service-slider__slide">
@@ -188,12 +213,15 @@
               </div>
               <div class="service-slider__slide-info">
                 <div class="service-slider__slide-description">
-                  Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  <h3 class="service-slider__slide-title">
+                    Дизайн коммерческих объектов
+                  </h3>
+                  <p class="service-slider__slide-text">
+                    Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  </p>
                 </div>
-                <div class="service-slider__item-contact">
-                  <span class="service-slider__item-projects-count"></span>
-                  <a href="#" class="service-slider__item-link">Консультация</a>
-                </div>
+                <span class="service-slider__item-projects-count">532 проекта</span>
+                <a href="#" class="service-slider__item-link">Консультация</a>
               </div>
             </li>
             <li class="service-slider__slide service-slider__slide--active">
@@ -202,12 +230,15 @@
               </div>
               <div class="service-slider__slide-info">
                 <div class="service-slider__slide-description">
-                  Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  <h3 class="service-slider__slide-title">
+                    Дизайн коммерческих объектов
+                  </h3>
+                  <p class="service-slider__slide-text">
+                    Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  </p>
                 </div>
-                <div class="service-slider__item-contact">
-                  <span class="service-slider__item-projects-count"></span>
-                  <a href="#" class="service-slider__item-link">Консультация</a>
-                </div>
+                <span class="service-slider__item-projects-count">532 проекта</span>
+                <a href="#" class="service-slider__item-link">Консультация</a>
               </div>
             </li>
             <li class="service-slider__slide">
@@ -216,12 +247,15 @@
               </div>
               <div class="service-slider__slide-info">
                 <div class="service-slider__slide-description">
-                  Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  <h3 class="service-slider__slide-title">
+                    Дизайн коммерческих объектов
+                  </h3>
+                  <p class="service-slider__slide-text">
+                    Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  </p>
                 </div>
-                <div class="service-slider__item-contact">
-                  <span class="service-slider__item-projects-count"></span>
-                  <a href="#" class="service-slider__item-link">Консультация</a>
-                </div>
+                <span class="service-slider__item-projects-count">532 проекта</span>
+                <a href="#" class="service-slider__item-link">Консультация</a>
               </div>
             </li>
             <li class="service-slider__slide">
@@ -230,12 +264,15 @@
               </div>
               <div class="service-slider__slide-info">
                 <div class="service-slider__slide-description">
-                  Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  <h3 class="service-slider__slide-title">
+                    Дизайн коммерческих объектов
+                  </h3>
+                  <p class="service-slider__slide-text">
+                    Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  </p>
                 </div>
-                <div class="service-slider__item-contact">
-                  <span class="service-slider__item-projects-count"></span>
-                  <a href="#" class="service-slider__item-link">Консультация</a>
-                </div>
+                <span class="service-slider__item-projects-count">532 проекта</span>
+                <a href="#" class="service-slider__item-link">Консультация</a>
               </div>
             </li>
             <li class="service-slider__slide">
@@ -244,12 +281,15 @@
               </div>
               <div class="service-slider__slide-info">
                 <div class="service-slider__slide-description">
-                  Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  <h3 class="service-slider__slide-title">
+                    Дизайн коммерческих объектов
+                  </h3>
+                  <p class="service-slider__slide-text">
+                    Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+                  </p>
                 </div>
-                <div class="service-slider__item-contact">
-                  <span class="service-slider__item-projects-count"></span>
-                  <a href="#" class="service-slider__item-link">Консультация</a>
-                </div>
+                <span class="service-slider__item-projects-count">532 проекта</span>
+                <a href="#" class="service-slider__item-link">Консультация</a>
               </div>
             </li>
           </ul>
@@ -273,7 +313,9 @@
         </h2>
         <div class="stages-of-work__list">
           <article class="stages-of-work__item">
-            <span class="stages-of-work__item-number">1</span>
+            <div class="stages-of-work__item-number">
+              <span class="stages-of-work__item-number-value">1</span>
+            </div>
             <div class="stages-of-work__item-content">
               <h5 class="stages-of-work__item-name">Консультация</h5>
               <p class="stages-of-work__item-description">
@@ -282,7 +324,9 @@
             </div>
           </article>
           <article class="stages-of-work__item">
-            <span class="stages-of-work__item-number">2</span>
+            <div class="stages-of-work__item-number">
+              <span class="stages-of-work__item-number-value">2</span>
+            </div>
             <div class="stages-of-work__item-content">
               <h5 class="stages-of-work__item-name">Техническое задание</h5>
               <p class="stages-of-work__item-description">
@@ -291,7 +335,9 @@
             </div>
           </article>
           <article class="stages-of-work__item">
-            <span class="stages-of-work__item-number">3</span>
+            <div class="stages-of-work__item-number">
+              <span class="stages-of-work__item-number-value">3</span>
+            </div>
             <div class="stages-of-work__item-content">
               <h5 class="stages-of-work__item-name">
                 Замеры и планировка
@@ -302,7 +348,9 @@
             </div>
           </article>
           <article class="stages-of-work__item">
-            <span class="stages-of-work__item-number">4</span>
+            <div class="stages-of-work__item-number">
+              <span class="stages-of-work__item-number-value">4</span>
+            </div>
             <div class="stages-of-work__item-content">
               <h5 class="stages-of-work__item-name">
                 Дизайн-концепция
@@ -313,7 +361,9 @@
             </div>
           </article>
           <article class="stages-of-work__item">
-            <span class="stages-of-work__item-number">5</span>
+            <div class="stages-of-work__item-number">
+              <span class="stages-of-work__item-number-value">5</span>
+            </div>
             <div class="stages-of-work__item-content">
               <h5 class="stages-of-work__item-name">3D Визуализация</h5>
               <p class="stages-of-work__item-description">
@@ -322,7 +372,9 @@
             </div>
           </article>
           <article class="stages-of-work__item">
-            <span class="stages-of-work__item-number">6</span>
+            <div class="stages-of-work__item-number">
+              <span class="stages-of-work__item-number-value">6</span>
+            </div>
             <div class="stages-of-work__item-content">
               <h5 class="stages-of-work__item-name">Комплектация интерьера</h5>
               <p class="stages-of-work__item-description">
@@ -342,9 +394,9 @@
               Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.
             </p>
             <fieldset class="contact-form__input-list">
-              <input type="text" class="contact-form__input" placeholder="Имя*" required>
-              <input type="tel" class="contact-form__input" placeholder="Телефон*" required>
-              <input type="email" class="contact-form__input" placeholder="E-mail*" required>
+              <input type="text" class="contact-form__input contact-form__input--name" placeholder="Имя*" required>
+              <input type="tel" class="contact-form__input contact-form__input--phone" placeholder="Телефон*" required>
+              <input type="email" class="contact-form__input contact-form__input--mail" placeholder="E-mail*" required>
               <input type="submit" value="отправить" class="contact-form__input contact-form__input--submit">
             </fieldset>
             <p class="contact-form__info">
@@ -364,8 +416,8 @@
         <div class="reviews__slider">
           <div class="reviews__slides-list">
             <article class="review review--active">
+              <img src="../img/content/client-rev1.png" alt="image" class="review__user-photo">
               <div class="review__content">
-                <img src="../img/content/client-rev1.png" alt="image" class="review__user-photo">
                 <h5 class="review__author">
                   Александра Холодная
                 </h5>
@@ -379,8 +431,8 @@
               </div>
             </article>
             <article class="review">
+              <img src="../img/content/client-rev2.png" alt="image" class="review__user-photo">
               <div class="review__content">
-                <img src="../img/content/client-rev2.png" alt="image" class="review__user-photo">
                 <h5 class="review__author">
                   Александра Холодная
                 </h5>
@@ -394,8 +446,8 @@
               </div>
             </article>
             <article class="review">
+              <img src="../img/content/client-rev3.png" alt="image" class="review__user-photo">
               <div class="review__content">
-                <img src="../img/content/client-rev3.png" alt="image" class="review__user-photo">
                 <h5 class="review__author">
                   Александра Холодная
                 </h5>
@@ -409,8 +461,8 @@
               </div>
             </article>
             <article class="review">
+              <img src="../img/content/client-rev2.png" alt="image" class="review__user-photo">
               <div class="review__content">
-                <img src="../img/content/client-rev2.png" alt="image" class="review__user-photo">
                 <h5 class="review__author">
                   Александра Холодная
                 </h5>
@@ -445,9 +497,11 @@
           <a href="#" class="footer__social-link footer__social-link--instagram"></a>
           <a href="#" class="footer__social-link footer__social-link--facebook"></a>
         </div>
+        <div class="footer__info">
+          <p class="footer__copyright">BRUME interior, 2017 &nbsp; &copy;</p>
+          <p class="footer__author-design">HolodnayaDesign</p>
+        </div>
       </div>
-      <p class="footer__copyright">BRUME interior, 2017 &nbsp; &copy;</p>
-      <p class="footer__author-design">HolodnayaDesign</p>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

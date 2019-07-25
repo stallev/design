@@ -21,7 +21,22 @@
   }
 }
 @media (min-width: $tablet-width) {
-
+  .page-title{
+    margin-bottom: 38px;
+    &__title{
+      padding-bottom: 40px;
+      font-size: 100px;
+      line-height: 100px;
+      letter-spacing: 9px;
+    }
+    &__description{
+      padding: 0 50px;
+      font-size: 26px;
+      font-weight: 600;
+      /* Text style for "В, оплотим" */
+      letter-spacing: 2.1px;
+    }
+  }
 }
 @media (min-width: $desctop-width) {
 }

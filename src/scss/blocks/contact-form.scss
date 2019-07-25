@@ -14,6 +14,10 @@
     font-weight: 700;
     // Text style for "М, ечтаете"
     letter-spacing: 0.32px;
+    @include respond-to(tabletAndWider){
+      padding: 0 100px;
+      margin-bottom: 40px;
+    }
   }
   &__description{
     padding: 0 10px 40px;
@@ -25,12 +29,25 @@
     line-height: 24px;
     // Text style for "О, ставьте"
     letter-spacing: 0.64px;
+    @include respond-to(tabletAndWider){
+      margin-bottom: 20px;
+      padding: 0 100px;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 24px;
+      // Text style for "О, ставьте"
+      letter-spacing: 0.79px;
+    }
   }
   &__input-list{
     border: 0px solid;
+    @include respond-to(tabletAndWider){
+      padding: 0 130px;
+    }
   }
   &__input{
     display: block;
+    position: relative;
     box-sizing: border-box;
     padding-bottom: 12px;
     width: 100%;
@@ -47,6 +64,25 @@
     line-height: 16.79px;
     // Text style for "И, мя*"
     letter-spacing: 1.29px;
+    @include respond-to(tabletAndWider){
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  }
+  &__input--name{
+    @include respond-to(tabletAndWider){
+      background-image: url("../img/decor/person-icon.png");
+    }
+  }
+  &__input--phone{
+    @include respond-to(tabletAndWider){
+      background-image: url("../img/decor/phone-icon.png");
+    }
+  }
+  &__input--mail{
+    @include respond-to(tabletAndWider){
+      background-image: url("../img/decor/mail-icon.png");
+    }
   }
   &__input--submit{
     display: block;
@@ -78,4 +114,8 @@
     // Text style for "Н, ажимая"
     letter-spacing: 0.8px;
   }
+}
+@media (min-width: $tablet-width) {
+}
+@media (min-width: $desctop-width) {
 }

@@ -2,6 +2,11 @@
   padding-bottom: 40px;
   &__filters-list{
     @extend %side-padding;
+    @include respond-to(tabletAndWider){
+      display: flex;
+      justify-content: space-between;
+      padding: 0 $tablet-side-padding;
+    }
   }
   &__filter{
     margin-bottom: 30px;
@@ -15,6 +20,9 @@
       font-size: 22px;
       font-weight: 600;
     }
+    @include respond-to(tabletAndWider){
+      margin-bottom: 48px;
+    }
   }
   &__slide{
     display: none;
@@ -23,10 +31,16 @@
     &--active{
       display: block;
     }
+    @include respond-to(tabletAndWider){
+      width: 604px;
+    }
   }
   &__slide-image{
     display: block;
     height: 529px;
+    @include respond-to(tabletAndWider){
+      height: auto;
+    }
   }
   &__item-name{
     padding-top: 22px;
@@ -37,5 +51,13 @@
     font-weight: 600;
     // Text style for "Дизайн инт"
     letter-spacing: 0.64px;
+    @include respond-to(tabletAndWider){
+      padding-top: 50px;
+      font-size: 20px;
+    }
   }
+}
+@media (min-width: $tablet-width) {
+}
+@media (min-width: $desctop-width) {
 }
